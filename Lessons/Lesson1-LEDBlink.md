@@ -1,4 +1,4 @@
-# The first thing we will do is make the LED on the arduino blink on its own repetitively. Make sure you're arduino is connected to your PC and you have the IDE opened up to write some C++ code. 
+The first thing we will do is make the LED on the arduino blink on its own repetitively. Make sure you're arduino is connected to your PC and you have the IDE opened up to write some C++ code. 
 
 We want the LED to turn on for one second and then turn off for one second. This code does that, but what the heck does it mean?
 
