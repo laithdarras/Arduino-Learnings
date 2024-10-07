@@ -1,0 +1,16 @@
+The first thing we will do is make the LED on the arduino blink on its own repetitively. Make sure you're arduino is connected to your PC and you have the IDE opened up to write some C++ code. 
+
+
+//LED Blink
+//The LED will turn on for one second and then turn off for one second
+
+int ledPin = 4;
+void setup() {
+    pinMode(ledPin, OUTPUT);
+}
+void loop() {
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+    digitalWrite(ledPin, LOW);
+    delay(1000);
+}
