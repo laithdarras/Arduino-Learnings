@@ -12,3 +12,9 @@ Temperature &
 Humidity Sensor	    Digital	            D3
 Air Pressure Sensor	  I2C	    I2C, 0x77(default) / 0x76(optional)
 3-Axis Accelerator	  I2C	      I2C, 0x19(default)
+
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
