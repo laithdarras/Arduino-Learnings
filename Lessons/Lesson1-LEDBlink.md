@@ -17,3 +17,8 @@ void loop() {
 
 Let's break it down step by step:
 - setup() is the function called when the program starts. This will only run once in your program. Every single program you write will require a setup() function. You can use it initialize variables, pin modes, start using libraries, etc.
+- loop() is the function called after the setup() has been called, and well... loops consecutively. Use this function to control the board.
+
+```int ledPin = 4;``` This initializes the LED pin variable that we will use to call in our function to turn on/off. But why is it set to 4? This now takes us to a deeper level in understanding I/O and Digital vs Analog.
+
+
