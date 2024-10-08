@@ -15,8 +15,19 @@ Air Pressure  |       I2C     |      0x77
 3-Axis Accel. |       I2C     |      0x19
 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+
+
+|   Modules      |   Interface   |   Pins/Address  |
+| -------------- | ------------- | --------------- |
+| LED            | Digital       | D4              |
+| Buzzer         | Digital       | D5              |
+| OLED Display   | I2C           | 0x78            |
+| Button         | Digital       | D6              |
+| Potentiometer  | Analog        | A0              |
+| Light          | Analog        | A6              |
+| Sound          | Analog        | A2              |
+| Temp Sensor    | Digital       | D3              |
+| Air Pressure   | I2C           | 0x77            |
+| 3-Axis Accel.  | I2C           | 0x19            |
+
 
