@@ -57,5 +57,7 @@ Digital control is used to create a square wave, a signal switched between on an
 
 To generate PWM signals in Arduino, you can use analogWrite(), in contrast to using digitalWrite() to generate DC signals.
 
+## What is the Serial Monitor?
+Serial Monitor is a really nice tool to observe results on Arduino, it can be very useful in terms of printing results from the sensors or debugging in general. You can also send data back to the controller via the serial monitor to do certain tasks!
 
 
