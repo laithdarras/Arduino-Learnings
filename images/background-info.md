@@ -49,6 +49,16 @@ Let's think of some real-world examples of analog and digital signals:
 - Analog: Volume knob, thermometer, etc.
 - Digital: Keyboard, cell-phone, tablet, etc.
 
+What is PWM?
+Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. 
+
+Digital control is used to create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of "on time" is called the pulse width. To get some analog values, you change, or "modulate", that pulse width. If you repeat this on-off pattern fast enough, the result is as if the signal is a steady voltage between 0 and 5V as a AC signal.
+
+To generate PWM signals in Arduino, you can use analogWrite(), in contrast to using digitalWrite() to generate DC signals.
+
+Definitions:
+- Alternating Current (AC): The direction of the electrical current reverses back and forth at regular intervals.
+- Direct Current (DC): The electrical current flows in one direction. DC is used in electronic devices because the components require a constant current to operate.
 
 
 
