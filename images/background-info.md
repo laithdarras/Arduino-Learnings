@@ -1,3 +1,31 @@
+# Hardware Overview
+![Parts](https://github.com/user-attachments/assets/a5bc375f-7fdd-4cbf-8027-d73f9526fcdb)
+1. LED light source. Always an output.
+2. Buzzer will emit a tone when OUTPUT is HIGH. Always an output.
+3. OLED Display is a monochrome 128x64 pixels passive display matrix module with I2C Interface. This can be both an input or output device. It can be an output by emitting light when an electric current passes through. It can be an input by communicating with other devices (like the Arduino) using I2C protocol.
+4. Button is a momentary push button. "Momentary" means that the button rebounds on its own after it is released. Always an input. Outputs a HIGH  signal when pressed, and LOW when released.
+5. Potentiometers function as voltage dividers that can be used to both adjust voltage output to a circuit, and measure electric potential – hence the name potentiometer. This can be both an input or output device. It can be an output by adjusting the voltage output to a circuit. For example, adjusting the volume on a speaker. It can be an input by controlling inputs for electronic circuits. For example, controlling the brightness of a lamp by dimming the lights.
+6. Light sensor uses a photo-resistor to detect light intensity. Always an input.
+7. Sound sensor uses a microphone to detect sound intensity. Always an input.
+8. A unique capacitive sensor element measures relative humidity and the temperature is measured by a negative temperature coefficient (NTC) thermistor. Always an input providing a digital output. Does NOT detect temps below freezing.
+9. This measures temperature and atmospheric pressure. As the atmospheric pressure changes with altitude, it can also measure approximate altitude of a place. It can be connected to a microcontroller through I2C. Both an input or output device. Barometric pressure sensors detect atmospheric pressure changes as an input. Barometric pressure sensors convert the detected pressure changes into an electrical signal as an output.
+10. The accelerometer contains three integrated circuits (ICs) that measure acceleration along each axis (x, y, z). The ICs monitor the capacitance of the fingers carved into the silicon, which changes when the fingers flex. The IC converts the capacitance change into a voltage, which is amplified and filtered by an op-amp circuit. This accelerometer can also monitor the surrounding temperature to tune the error caused by it. Both an input or output device. It can be an input by sensing elements that are oriented perpendicular to each other, measuring all vibration components affecting an object. The accelerometer outputs an electrical signal that is proportional to the input acceleration. The output voltage increases for positive accelerations and decreases for negative accelerations.
+
+## Definitions:
+- HIGH corresponds to 1, true, or logical high
+- LOW corresponds to 0, false, or logical low
+- I2C: Inter-Integrated Circuit protocol is a serial communication protocol that allows multiple devices to communicate with each other using two wires and unique addresses. 
+![Introduction-to-I2C-Single-Master-Single-Slave](https://github.com/user-attachments/assets/c7347e3c-5caa-4219-ba4b-fda5028508b4)
+- SDA (Serial Data) – The line for the master and slave to send and receive data.
+- SCL (Serial Clock) – The line that carries the clock signal.
+
+Read more on the I2C protocol with in-depth explanations of data transmission [here](https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/)
+
+
+
+
+
+
 These are the default pins for each component on the Arduino board. You're able to use these, rather than the physical cables connecting to one another. The numbering is also labeled on top of each component on the physical board, so you don't have to reference this table all the time.
 
 
@@ -15,17 +43,5 @@ These are the default pins for each component on the Arduino board. You're able 
 | 3-Axis Accel.  | I2C           | 0x19            |
 
 
-# Hardware Overview
-![Parts](https://github.com/user-attachments/assets/a5bc375f-7fdd-4cbf-8027-d73f9526fcdb)
-1. LED light source. Always an output.
-2. Buzzer will emit a tone when OUTPUT is HIGH. Always an output.
-3. OLED Display is a monochrome 128x64 pixels passive display matrix module with I2C Interface. This can be both an input or output device. It can be an output by emitting light when an electric current passes through. It can be an input by communicating with other devices (like the Arduino) using I2C protocol.
-4. Button is a momentary push button. "Momentary" means that the button rebounds on its own after it is released. Always an input. Outputs a HIGH  signal when pressed, and LOW when released.
-5. Potentiometers function as voltage dividers that can be used to both adjust voltage output to a circuit, and measure electric potential – hence the name potentiometer. This can be both an input or output device. It can be an output by adjusting the voltage output to a circuit. For example, adjusting the volume on a speaker. It can be an input by controlling inputs for electronic circuits. For example, controlling the brightness of a lamp by dimming the lights.
-6. Light sensor uses a photo-resistor to detect light intensity. Always an input.
-7. Sound sensor uses a microphone to detect sound intensity. Always an input.
-8. A unique capacitive sensor element measures relative humidity and the temperature is measured by a negative temperature coefficient (NTC) thermistor. Always an input providing a digital output. Does NOT detect temps below freezing.
-9. This measures temperature and atmospheric pressure. As the atmospheric pressure changes with altitude, it can also measure approximate altitude of a place. It can be connected to a microcontroller through I2C. Both an input or output device. Barometric pressure sensors detect atmospheric pressure changes as an input. Barometric pressure sensors convert the detected pressure changes into an electrical signal as an output.
-10. The accelerometer contains three integrated circuits (ICs) that measure acceleration along each axis (x, y, z). The ICs monitor the capacitance of the fingers carved into the silicon, which changes when the fingers flex. The IC converts the capacitance change into a voltage, which is amplified and filtered by an op-amp circuit. This accelerometer can also monitor the surrounding temperature to tune the error caused by it. Both an input or output device. It can be an input by sensing elements that are oriented perpendicular to each other, measuring all vibration components affecting an object. The accelerometer outputs an electrical signal that is proportional to the input acceleration. The output voltage increases for positive accelerations and decreases for negative accelerations.
 
 
