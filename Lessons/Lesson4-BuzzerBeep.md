@@ -94,5 +94,3 @@ is also valid and works well!
 The map() function uses integer math so will not generate fractions, when the math might indicate that it should do so. Fractional remainders are truncated and are not rounded or averaged.
 
 Adjust the potentiometer to adjust the LED brightness.
-
-All in all, when you want to use the PWM function, make sure to select those pins with a "~" symbol in front of their names.
