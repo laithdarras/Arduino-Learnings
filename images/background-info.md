@@ -22,10 +22,7 @@
 Read more on the I2C protocol with in-depth explanations of data transmission [here](https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/)
 
 
-
-
-
-
+## Components
 These are the default pins for each component on the Arduino board. You're able to use these, rather than the physical cables connecting to one another. The numbering is also labeled on top of each component on the physical board, so you don't have to reference this table all the time.
 
 
@@ -41,6 +38,16 @@ These are the default pins for each component on the Arduino board. You're able 
 | Temp Sensor    | Digital       | D3              |
 | Air Pressure   | I2C           | 0x77            |
 | 3-Axis Accel.  | I2C           | 0x19            |
+
+
+We now know what I2C is, but what the heck is the difference between Digital and Analog and how do we know which component carries out which interface?
+- **Digital signal** refers to the value of the amplitude is discrete, limited to a number of finite values. Only has two states, LOW (0V) for 0; HIGH (5V) for 1.
+- An **analog signal** is one that can take on any number of values, unlike a digital signal which has only two values: HIGH and LOW
+![download](https://github.com/user-attachments/assets/e03a1366-ee98-4a42-af08-f743eae8f2a1)
+
+Let's think of some real-world examples of analog and digital signals:
+- Analog: Volume knob, thermometer, etc.
+- Digital: Keyboard, cell-phone, tablet, etc.
 
 
 
