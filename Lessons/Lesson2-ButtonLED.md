@@ -7,7 +7,7 @@ Hahah but seriously.. first and foremost, we need to know that the input of a bu
 This lesson will require the button and the LED components. Both the sensor and the LED use digital signals, so they should be connected to digital interfaces.
 
 This is the code:
-```
+```cpp
 //Button to turn ON/OFF LED
 //Constants won't change. They're used here to set pin numbers:
 const int buttonPin = 6;     // the number of the pushbutton pin
